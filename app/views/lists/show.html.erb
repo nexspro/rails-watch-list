@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="my-4 text-center"><%= @list.name %></h1>
+
+  <h2 class="mb-3">🎞️ Movies</h2>
+  <ul class="list-group">
+    <% @list.movies.each do |movie| %>
+      <li class="list-group-item d-flex justify-content-between">
+        <span><strong><%= movie.title %></strong> - <%= movie.rating %> ⭐</span>
+      </li>
+    <% end %>
+  </ul>
+
+  <h2 class="mt-4">➕ Ajouter un film</h2>
+  <%= render 'bookmarks/form', list: @list if @list.present? %>
+
+</div>

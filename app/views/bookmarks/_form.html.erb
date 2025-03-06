@@ -1,0 +1,23 @@
+<%= form_with model: [@list, Bookmark.new], local: true do |f| %>
+
+  <% if @bookmark&.errors&.any? %>
+    <div class="alert alert-danger">
+      <h4>Des erreurs ont été détectées :</h4>
+      <ul>
+        <% @bookmark.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= f.input :movie_id, collection: Movie.all, label: "Sélectionner un film", prompt: "Choisissez un film", input_html: { class: "form-select" } %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.input :comment, label: "Votre commentaire", placeholder: "Ajoutez un commentaire", input_html: { class: "form-control" } %>
+  </div>
+
+  <%= f.submit "Ajouter", class: "btn btn-primary" %>
+<% end %>
