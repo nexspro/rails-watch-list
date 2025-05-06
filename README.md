@@ -1,24 +1,33 @@
-# README
+#  Rails Watch List
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A full-stack Ruby on Rails application that allows users to create and manage personalized movie watchlists. Built to practice CRUD operations, MVC architecture, and integration with external APIs.
 
-Things you may want to cover:
+---
 
-* Ruby version
+##  Features
 
-* System dependencies
+- 📋 Create, view, edit, and delete movie watchlists
+- 🎞️ Add movies to watchlists using The Movie Database (TMDb) API
+- 📝 Add comments to movies within watchlists
+- 🔍 Search and filter movies by title or genre
+- 🎨 Responsive design with Bootstrap 4
 
-* Configuration
+---
 
-* Database creation
+## 🛠 Tech Stack
 
-* Database initialization
+- **Ruby on Rails** (MVC framework)
+- **PostgreSQL** (Database)
+- **Bootstrap 4** (Styling and responsiveness)
+- **JavaScript** (Dynamic functionalities)
+- **TMDb API** (Movie data)
 
-* How to run the test suite
+---
 
-* Services (job queues, cache servers, search engines, etc.)
+##  Getting Started
 
-* Deployment instructions
+1. **Clone the repository:**
 
-* ...
+   ```bash
+   git clone https://github.com/nexspro/rails-watch-list.git
+   cd rails-watch-list
